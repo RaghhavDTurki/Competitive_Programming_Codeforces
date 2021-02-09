@@ -8,6 +8,11 @@ Created on Tue Feb  9 10:45:10 2021
 
 import subprocess as cmd
 
+res = input("Do you wish to add all files?([y]/n)\n")
+# if res.startswith('n'):
+#     file = input("Enter file name: ")
+#     cp = cmd.run("git add {file}",check=True, shell=True)
+# else:
 cp = cmd.run("git add .", check=True, shell=True)
 #print(cp)
 
