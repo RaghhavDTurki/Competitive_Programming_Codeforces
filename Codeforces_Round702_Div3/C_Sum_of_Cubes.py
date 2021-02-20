@@ -7,15 +7,15 @@ Created on Sat Feb 20 12:21:13 2021
 """
 t = int(input()) 
 f = []
-for _ in range(t):
+for _ in range(t): 
     n = int(input())
     cubes = {}
-    for i in range(1,int(n**(1./3.))+8):
+    for i in range(1,int(n**(1./3.))+8): 
         cubes[i**3] = 1
     for i in range(1,len(cubes)): 
         a = i**3
         b = n - a
-        if b in cubes.keys():
+        if b in cubes: 
             ans = "YES"
             break
         else:
